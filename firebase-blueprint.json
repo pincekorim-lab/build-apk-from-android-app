@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "schema": {
+        "uid": "string",
+        "username": "string",
+        "fullName": "string",
+        "email": "string",
+        "photoUrl": "string",
+        "coverPhotoUrl": "string",
+        "bio": "string",
+        "followersCount": "number",
+        "followingCount": "number",
+        "isPrivate": "boolean",
+        "createdAt": "timestamp"
+      }
+    },
+    "Story": {
+      "path": "stories/{storyId}",
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "username": "string",
+        "userPhotoUrl": "string",
+        "mediaUrl": "string",
+        "mediaType": "string",
+        "caption": "string",
+        "backgroundColor": "string",
+        "privacy": "string",
+        "createdAt": "timestamp",
+        "expiresAt": "timestamp"
+      }
+    },
+    "Notification": {
+      "path": "notifications/{notificationId}",
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "actorId": "string",
+        "actorUsername": "string",
+        "actorPhotoUrl": "string",
+        "type": "string",
+        "targetId": "string",
+        "message": "string",
+        "read": "boolean",
+        "createdAt": "timestamp"
+      }
+    },
+    "Reaction": {
+      "path": "reactions/{reactionId}",
+      "schema": {
+        "id": "string",
+        "storyId": "string",
+        "userId": "string",
+        "username": "string",
+        "emoji": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "StoryView": {
+      "path": "story_views/{viewId}",
+      "schema": {
+        "id": "string",
+        "storyId": "string",
+        "userId": "string",
+        "username": "string",
+        "userPhotoUrl": "string",
+        "viewedAt": "timestamp"
+      }
+    },
+    "Archive": {
+      "path": "archive/{archiveId}",
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "mediaUrl": "string",
+        "mediaType": "string",
+        "caption": "string",
+        "createdAt": "timestamp"
+      }
+    }
+  }
+}

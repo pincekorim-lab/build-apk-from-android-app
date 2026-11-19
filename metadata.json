@@ -1,0 +1,6 @@
+{
+  "name": "StoryMania",
+  "description": "A complete social story app inspired by Instagram and Facebook Stories with Firebase Firestore and Authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
